@@ -1,0 +1,34 @@
+#header {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  top: 0px;
+  background-color: gray; }
+
+.container .row {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: oldLace; }
+  .container .row .col-lg-5 {
+    background-color: gray;
+    height: 149px;
+    margin-top: 27px; }
+
+.container #popup {
+  width: 588px;
+  height: 300px;
+  position: relative;
+  top: -390px;
+  margin: auto;
+  background-color: black;
+  display: none; }
+
+#footer1 {
+  width: 100%;
+  height: 583px;
+  background-color: gray; }
+
+#footer2 {
+  width: 100%;
+  height: 155px;
+  background-color: oldLace; }
