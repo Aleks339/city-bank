@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Aleks339/city-bank/issues"
   },
-  "homepage": "https://github.com/Aleks339/city-bank#readme"
+  "homepage": "https://github.com/Aleks339/city-bank#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  }
 }

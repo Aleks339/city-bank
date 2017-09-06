@@ -5,41 +5,33 @@ $colorOfFooter1: gray;
 $colorOfFooter2: oldLace;
 $colorOfPopup:black;
 
-#header{
-    width:100%;
-    height:400px;
-    position: relative;
-    top:0px;
+header{
+    .container{
+        min-height: 400px;
+    }
     background-color: $colorOfHeader;
 }
-.container{
-   .row{
-        padding-top: 76px;
-        padding-bottom: 76px;
-        background-color: $backgroundColorOfMain;
-        .col-lg-5{
-            background-color: $colorOfDivs;
-            height: 149px;
-            margin-top: 27px;
-        }
+main{
+    .item{
+        width:100%;
+        min-height: 150px;
+        margin-bottom: 25px;
+        background-color: $colorOfDivs;
     }
-    #popup {
-        width:588px;
-        height:300px;
-        position: relative;
-        top:-390px;
-        margin: auto;
-        background-color: $colorOfPopup;
-        display: none;
+    .container{
+        min-height: 300px;
+        padding-top: 75px;
     }
 }
-#footer1{
-    width: 100%;
-    height:583px;
+.computer{
     background-color: $colorOfFooter1;
+    .container{
+        height:583px;        
+    }    
 }
-#footer2{
-    width: 100%;
-    height:155px;
+footer{
+    .container{
+        height:155px;        
+    } 
     background-color: $colorOfFooter2;
 }
