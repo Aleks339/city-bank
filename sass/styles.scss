@@ -8,8 +8,29 @@ $colorOfPopup:black;
 header{
     .container{
         min-height: 400px;
+        padding-top: 30px;
     }
-    background-color: $colorOfHeader;
+    background: $colorOfHeader  url(../img/header-bg.png) center center;
+    background-size: cover;
+    p, h1{
+        color: white;
+    }
+    .banner-wrapper{
+        margin-left: 20px;
+        padding-left: 0;
+        border-bottom: 3px solid white;
+        display: inline-block;
+    }
+    h1{
+        font-size: 50px;
+        margin-top: 0px;
+        padding-top: 0;
+        line-height: 40px;
+    }
+    .form{
+        background-color: white;
+        min-height:340px;
+    }
 }
 main{
     .item{
