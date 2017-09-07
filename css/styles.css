@@ -1,144 +1,163 @@
-header {
-  background: gray url(../img/header-bg.png) center center;
-  background-size: cover; }
-  header .container {
-    min-height: 400px;
-    padding-top: 30px; }
-  header p, header h1 {
-    color: white; }
-  header .banner-wrapper {
-    margin-left: 20px;
-    padding-left: 0;
-    border-bottom: 5px solid white;
-    padding-bottom: 15px;
-    display: inline-block; }
-  header p {
-    margin-left: 22px;
-    margin-top: 26px;
-    font-size: 18px;
-    line-height: 24px; }
-  header h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-top: 0px;
-    padding-top: 0;
-    line-height: 40px; }
-  header .form {
-    background-color: white;
-    min-height: 340px; }
-
-main .block-1 {
-  background-image: url(../img/block-1.png); }
-
-main .block-2 {
-  background-image: url(../img/block-2.png); }
-
-main .block-3 {
-  background-image: url(../img/block-3.png); }
-
-main .block-4 {
-  background-image: url(../img/block-4.png); }
-
-main .block-5 {
-  background-image: url(../img/block-5.png); }
-
-main .item {
-  width: 100%;
-  min-height: 150px;
-  margin-bottom: 25px;
-  background-color: gray;
-  position: relative;
-  overflow: hidden; }
-  main .item:hover .block {
-    top: 0px; }
-  main .item .block {
-    background-color: rgba(100, 150, 190, 0.5);
-    min-height: 150px;
+body {
+  margin-left: -325px;
+  margin-top: 0px; }
+  body header {
+    background: gray url(../img/header-bg.png) center center;
+    background-size: cover; }
+    body header .container {
+      min-height: 400px;
+      padding-top: 30px; }
+    body header p, body header h1 {
+      color: white; }
+    body header .banner-wrapper {
+      margin-left: 20px;
+      padding-left: 0;
+      border-bottom: 5px solid white;
+      padding-bottom: 15px;
+      display: inline-block; }
+    body header p {
+      margin-left: 22px;
+      margin-top: 26px;
+      font-size: 18px;
+      line-height: 24px; }
+    body header h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-top: 0px;
+      padding-top: 0;
+      line-height: 40px; }
+    body header .form {
+      background-color: white;
+      min-height: 340px; }
+      body header .form form {
+        margin-top: -19px; }
+        body header .form form h2 {
+          padding-top: 16px;
+          padding-left: 15px;
+          letter-spacing: -3px;
+          word-spacing: 8px; }
+        body header .form form .form-wrapper {
+          margin-top: 16px;
+          margin-left: 15px; }
+          body header .form form .form-wrapper input {
+            font-family: inherit;
+            font-size: inherit;
+            height: 50px;
+            margin-top: -5px;
+            margin-bottom: 20px;
+            margin-left: 3px;
+            width: 250px; }
+            body header .form form .form-wrapper input input[placeholder] {
+              color: red !important; }
+          body header .form form .form-wrapper select {
+            margin-top: -5px;
+            margin-left: 3px;
+            height: 50px;
+            width: 250px; }
+  body main .block-1 {
+    background-image: url(../img/block-1.png); }
+  body main .block-2 {
+    background-image: url(../img/block-2.png); }
+  body main .block-3 {
+    background-image: url(../img/block-3.png); }
+  body main .block-4 {
+    background-image: url(../img/block-4.png); }
+  body main .block-5 {
+    background-image: url(../img/block-5.png); }
+  body main .item {
     width: 100%;
-    position: absolute;
-    top: 110px;
-    transition: all 1s;
-    padding-left: 22px;
-    padding-top: 7px;
-    color: white; }
-    main .item .block h3 {
-      padding: 0;
-      margin: 0;
-      font-weight: bold;
-      font-size: 24px; }
-    main .item .block p {
-      padding-top: 10px;
-      padding-right: 10px;
-      font-size: 15px;
-      line-height: 18px; }
-
-main .container {
-  min-height: 300px;
-  padding-top: 75px; }
-
-.computer {
-  background-image: url(../img/background.png); }
-  .computer .container {
-    height: 535px;
-    margin-top: 50px; }
-    .computer .container img {
+    min-height: 150px;
+    margin-bottom: 25px;
+    background-color: gray;
+    position: relative;
+    overflow: hidden; }
+    body main .item:hover .block {
+      top: 0px; }
+    body main .item .block {
+      background-color: rgba(100, 150, 190, 0.5);
+      min-height: 150px;
+      width: 100%;
       position: absolute;
-      top: -35px;
-      left: 20px; }
-    .computer .container h1 {
-      padding-top: 40px;
-      padding-left: 50px;
-      font-size: 46px;
-      word-spacing: 4px;
-      font-weight: bold; }
-    .computer .container h1, .computer .container .li {
-      color: #6496be; }
-    .computer .container ol {
-      list-style: none;
-      counter-reset: my-awesome-counter;
-      padding-top: 42px;
-      padding-left: 0px;
-      font-size: 20px;
-      font-weight: bold;
-      line-height: 38px;
-      margin-top: -15px; }
-      .computer .container ol li {
-        counter-increment: my-awesome-counter;
-        word-spacing: -2px;
-        margin-top: 11px;
-        margin-left: 4px;
-        font-size: 19px;
-        letter-spacing: 0px;
-        vertical-align: middle; }
-        .computer .container ol li::before {
-          content: counter(my-awesome-counter);
-          background: #6496be;
-          width: 3rem;
-          height: 3rem;
-          border-radius: 50%;
-          display: inline-block;
-          line-height: 17px;
-          color: white;
-          text-align: center;
-          vertical-align: middle;
-          margin-right: 1.7rem;
-          margin-left: -3px; }
-        .computer .container ol li sup {
-          top: -10px;
-          left: -10px;
-          font-size: 78%; }
-
-footer {
-  background-color: oldLace; }
-  footer .container {
-    height: 155px; }
-    footer .container .footer-wrapper {
-      line-height: 0px;
-      border-left: 3px solid #6496be;
-      margin-top: 42px;
-      line-height: 121%; }
-      footer .container .footer-wrapper .footer {
-        margin-top: 17px;
-        margin-left: 25px;
-        font-size: 18px;
+      top: 110px;
+      transition: all 1s;
+      padding-left: 22px;
+      padding-top: 7px;
+      color: white; }
+      body main .item .block h3 {
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        font-size: 24px; }
+      body main .item .block p {
+        padding-top: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        line-height: 18px; }
+  body main .container {
+    min-height: 300px;
+    padding-top: 75px; }
+  body .computer {
+    background-image: url(../img/background.png); }
+    body .computer .container {
+      height: 535px;
+      margin-top: 50px; }
+      body .computer .container img {
+        position: absolute;
+        top: -35px;
+        left: 20px; }
+      body .computer .container h1 {
+        padding-top: 40px;
+        padding-left: 47px;
+        font-size: 46px;
+        word-spacing: 4px;
+        font-weight: bold; }
+      body .computer .container h1, body .computer .container .li {
         color: #6496be; }
+      body .computer .container ol {
+        list-style: none;
+        counter-reset: my-awesome-counter;
+        padding-top: 42px;
+        padding-left: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 38px;
+        margin-top: -15px; }
+        body .computer .container ol li {
+          counter-increment: my-awesome-counter;
+          word-spacing: -3px;
+          margin-top: 12px;
+          margin-left: 5px;
+          font-size: 19px;
+          letter-spacing: 0px;
+          vertical-align: middle; }
+          body .computer .container ol li::before {
+            content: counter(my-awesome-counter);
+            background: #6496be;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: inline-block;
+            line-height: 17px;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            margin-right: 1.7rem;
+            margin-left: -3px; }
+          body .computer .container ol li sup {
+            top: -10px;
+            left: -7px;
+            font-size: 78%; }
+  body footer {
+    background-color: oldLace; }
+    body footer .container {
+      height: 155px; }
+      body footer .container .footer-wrapper {
+        line-height: 0px;
+        border-left: 3px solid #6496be;
+        margin-top: 42px;
+        line-height: 121%; }
+        body footer .container .footer-wrapper .footer {
+          margin-top: 17px;
+          margin-left: 25px;
+          font-size: 18px;
+          color: #6496be; }

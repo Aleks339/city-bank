@@ -5,173 +5,209 @@ $colorOfFooter1: gray;
 $colorOfFooter2: oldLace;
 $colorOfPopup:black;
 
-header{
-    .container{
-        min-height: 400px;
-        padding-top: 30px;
-    }
-    background: $colorOfHeader  url(../img/header-bg.png) center center;
-    background-size: cover;
-    p, h1{
-        color: white;
-    }
-    .banner-wrapper{
-        margin-left: 20px;
-        padding-left: 0;
-        border-bottom: 5px solid white;
-        padding-bottom: 15px;
-        display: inline-block;
-    }
-    p{
-      margin-left: 22px;
-      margin-top: 26px;
-      font-size: 18px;
-      line-height: 24px;
-    }
-    h1{
-        font-size: 48px;
-        font-weight: bold;
-        margin-top: 0px;
-        padding-top: 0;
-        line-height: 40px;
-    }
-    .form{
-        background-color: white;
-        min-height:340px;
-    }
-}
-main{
-    .block-1{
-        background-image: url(../img/block-1.png);
-    }
-    .block-2{
-        background-image: url(../img/block-2.png);
-    }
-    .block-3{
-        background-image: url(../img/block-3.png);
-    }
-    .block-4{
-        background-image: url(../img/block-4.png);
-    }
-    .block-5{
-        background-image: url(../img/block-5.png);
-    }
-    .item{
-        width:100%;
-        min-height: 150px;
-        margin-bottom: 25px;
-        background-color: $colorOfDivs;
-        position: relative;
-        overflow: hidden;
-        &:hover{
-            .block{
-                top: 0px;
-            }
+body{
+    margin-left: -325px;
+    margin-top: 0px;
+    header{
+        .container{
+            min-height: 400px;
+            padding-top: 30px;
         }
-        .block {
-            background-color: rgba(100,150,190, 0.5);
-            min-height:150px;
-            width:100%;
-            position: absolute;
-            top:110px;
-            transition: all 1s;
-            padding-left: 22px;
-            padding-top: 7px;
-            color:white;
-            h3{
-                padding: 0;
-                margin: 0;
-                font-weight: bold;
-                font-size: 24px;
-            }
-            p{
-                padding-top: 10px;
-                padding-right: 10px;
-                font-size: 15px;
-                line-height: 18px;
-            }
+        background: $colorOfHeader  url(../img/header-bg.png) center center;
+        background-size: cover;
+        p, h1{
+            color: white;
         }
-    }
-    .container{
-        min-height: 300px;
-        padding-top: 75px;
-    }
-}
-.computer{
-    background-image: url(../img/background.png);
-    .container{
-        height: 535px;
-        margin-top: 50px;
-        img {
-            position: absolute;
-            top: -35px;
-            left: 20px;
+        .banner-wrapper{
+            margin-left: 20px;
+            padding-left: 0;
+            border-bottom: 5px solid white;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+        p{
+          margin-left: 22px;
+          margin-top: 26px;
+          font-size: 18px;
+          line-height: 24px;
         }
         h1{
-          padding-top: 40px;
-          padding-left: 50px;
-          font-size: 46px;
-          word-spacing: 4px;
-          font-weight: bold;
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 0px;
+            padding-top: 0;
+            line-height: 40px;
         }
-        h1 , .li {
-            color: rgba(100,150,190, 1);
+        .form{
+            background-color: white;
+            min-height:340px;
+            form{
+                margin-top: -19px;
+                h2{
+                    padding-top: 16px;
+                    padding-left: 15px;
+                    letter-spacing: -3px;
+                    word-spacing: 8px;
+                }
+                .form-wrapper{
+                    margin-top: 16px;
+                    margin-left: 15px;
+                    input{
+                            font-family: inherit;
+                            font-size: inherit;
+                            height: 50px;
+                            margin-top: -5px;
+                            margin-bottom: 20px;
+                            margin-left: 3px;
+                            width: 250px;
+                        input[placeholder] {
+                            color: red !important;
+                        }
+                    }
+                    select {
+                        margin-top: -5px;
+                        margin-left: 3px;
+                        height: 50px;
+                        width: 250px;
+                    }
+                }
+            }            
         }
-        ol{
-          list-style: none;
-          counter-reset: my-awesome-counter;
-          padding-top: 42px;
-          padding-left: 0px;
-          font-size: 20px;
-          font-weight: bold;
-          line-height: 38px;
-          margin-top: -15px;
-          li {
-            counter-increment: my-awesome-counter;
-            word-spacing: -2px;
-            margin-top: 11px;
-            margin-left: 4px;
-            font-size: 19px;
-            letter-spacing: 0px;
-            vertical-align: middle;
-              &::before{
-                  content: counter(my-awesome-counter);
-                  background: rgba(100,150,190, 1);
-                  width: 3rem;
-                  height: 3rem;
-                  border-radius: 50%;
-                  display: inline-block;
-                  line-height: 17px;
-                  color: white;
-                  text-align: center;
-                  vertical-align: middle;
-                  margin-right: 1.7rem;
-                  margin-left: -3px;
-              }
-              sup{
-                  top: -10px;
-                  left: -10px;
-                  font-size: 78%;
-              }
-          }
+    }
+    main{
+        .block-1{
+            background-image: url(../img/block-1.png);
         }
-    }    
-}
-footer{
-    .container{
-        height:155px;
-        .footer-wrapper {
-            line-height: 0px;
-            border-left: 3px solid rgba(100,150,190, 1); 
-            margin-top: 42px;;
-            line-height: 121%;
-            .footer{
-               margin-top: 17px;
-               margin-left: 25px;
-               font-size: 18px;
-               color: rgba(100,150,190, 1); 
+        .block-2{
+            background-image: url(../img/block-2.png);
+        }
+        .block-3{
+            background-image: url(../img/block-3.png);
+        }
+        .block-4{
+            background-image: url(../img/block-4.png);
+        }
+        .block-5{
+            background-image: url(../img/block-5.png);
+        }
+        .item{
+            width:100%;
+            min-height: 150px;
+            margin-bottom: 25px;
+            background-color: $colorOfDivs;
+            position: relative;
+            overflow: hidden;
+            &:hover{
+                .block{
+                    top: 0px;
+                }
+            }
+            .block {
+                background-color: rgba(100,150,190, 0.5);
+                min-height:150px;
+                width:100%;
+                position: absolute;
+                top:110px;
+                transition: all 1s;
+                padding-left: 22px;
+                padding-top: 7px;
+                color:white;
+                h3{
+                    padding: 0;
+                    margin: 0;
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+                p{
+                    padding-top: 10px;
+                    padding-right: 10px;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
             }
         }
-    } 
-    background-color: $colorOfFooter2;
+        .container{
+            min-height: 300px;
+            padding-top: 75px;
+        }
+    }
+    .computer{
+        background-image: url(../img/background.png);
+        .container{
+            height: 535px;
+            margin-top: 50px;
+            img {
+                position: absolute;
+                top: -35px;
+                left: 20px;
+            }
+            h1{
+              padding-top: 40px;
+              padding-left: 47px;
+              font-size: 46px;
+              word-spacing: 4px;
+              font-weight: bold;
+            }
+            h1 , .li {
+                color: rgba(100,150,190, 1);
+            }
+            ol{
+              list-style: none;
+              counter-reset: my-awesome-counter;
+              padding-top: 42px;
+              padding-left: 0px;
+              font-size: 20px;
+              font-weight: bold;
+              line-height: 38px;
+              margin-top: -15px;
+              li {
+                counter-increment: my-awesome-counter;
+                    word-spacing: -3px;
+                    margin-top: 12px;
+                    margin-left: 5px;
+                    font-size: 19px;
+                    letter-spacing: 0px;
+                    vertical-align: middle;
+                  &::before{
+                      content: counter(my-awesome-counter);
+                      background: rgba(100,150,190, 1);
+                      width: 3rem;
+                      height: 3rem;
+                      border-radius: 50%;
+                      display: inline-block;
+                      line-height: 17px;
+                      color: white;
+                      text-align: center;
+                      vertical-align: middle;
+                      margin-right: 1.7rem;
+                      margin-left: -3px;
+                  }
+                  sup{
+                      top: -10px;
+                      left: -7px;
+                      font-size: 78%;
+                  }
+              }
+            }
+        }    
+    }
+    footer{
+        .container{
+            height:155px;
+            .footer-wrapper {
+                line-height: 0px;
+                border-left: 3px solid rgba(100,150,190, 1); 
+                margin-top: 42px;;
+                line-height: 121%;
+                .footer{
+                   margin-top: 17px;
+                   margin-left: 25px;
+                   font-size: 18px;
+                   color: rgba(100,150,190, 1); 
+                }
+            }
+        } 
+        background-color: $colorOfFooter2;
+    }
 }
+
